@@ -48,7 +48,7 @@ pip install -r requirements.txt
 # 3. Set your API key (choose one method)
 
 # Option A — environment variable (recommended)
-export OPENROUTER_API_KEY="sk-or-v1-..."
+export GROQ_API_KEY="sk-or-v1-..."
 
 # Option B — Streamlit secrets (for Streamlit Cloud)
 cp .streamlit/secrets.toml.example .streamlit/secrets.toml
@@ -79,10 +79,9 @@ streamlit run app.py
 
 | Variable | Description |
 |---|---|
-| `OPENROUTER_API_KEY` | Your [OpenRouter](https://openrouter.ai) API key |
+| `API` | Your Groq API key for Llama 3.3 70B Versatile |
 
 ---
-
 ## Tech Stack
 
 | Layer | Library |
@@ -90,6 +89,6 @@ streamlit run app.py
 | UI | Streamlit |
 | PDF parsing | pdfplumber |
 | DOCX parsing | python-docx |
-| AI backend | OpenRouter (multiple free models) |
+| AI backend | Groq API (Llama 3.3 70B Versatile) |
 | PDF export | ReportLab |
 | DOCX export | python-docx |
